@@ -107,7 +107,7 @@ export default function Sidebar({ className }: SidebarProps) {
       </div>
       <div
         className={classNames(
-          "hidden lg:block w-96 bg-blue-700 h-screen text-white text-center sticky top-0",
+          "hidden lg:block w-80 bg-blue-700 h-screen text-white text-center sticky top-0",
           className
         )}
       >

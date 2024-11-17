@@ -10,3 +10,12 @@
 .ss-active {
   @apply bg-yellow-500 text-blue-700 font-bold rounded transition-all;
 }
+
+.doted::after {
+  background: repeating-linear-gradient(
+    white 0px,
+    blue 2px,
+    transparent 2px,
+    transparent 2px
+  );
+}

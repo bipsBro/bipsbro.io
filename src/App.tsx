@@ -39,7 +39,10 @@ function App() {
               </button>
             </div>
           </div>
-          <Section id="about" className="flex flex-col justify-center !px-0">
+          <Section
+            id="about"
+            className="flex flex-col justify-center !px-0 !pb-0"
+          >
             <div className="md:flex gap-8 py-8 px-4 md:px-8 lg:px-16 my-10">
               <div className="hidden md:flex items-center justify-end">
                 <div className="h-96 w-96 rounded overflow-hidden">
@@ -84,7 +87,7 @@ function App() {
             </div>
           </Section>
 
-          <Section id="services" className="flex flex-col justify-center ">
+          <Section id="services" className="flex flex-col justify-center">
             <p className="text-blue-500 uppercase">Services</p>
             <p className="text-3xl font-sans font-bold">What I Do</p>
             <div className="grid grid-cols-12 gap-8 mt-20">
@@ -99,7 +102,7 @@ function App() {
                 ]}
                 tools={["ReactJS, React Native, NodeJS, Docker, AWS, GraphQL."]}
                 idealFor={["Startups", "tech entrepreneurs", "SaaS businesses"]}
-                className="col-span-12 md:col-span-6 xl:col-span-4"
+                className="col-span-12 md:col-span-6 2xl:col-span-4"
               />
 
               <ServiceCard
@@ -115,7 +118,7 @@ function App() {
                 idealFor={[
                   "Tech teams needing robust infrastructure and streamlined deployments.",
                 ]}
-                className="col-span-12 md:col-span-6 xl:col-span-4"
+                className="col-span-12 md:col-span-6 2xl:col-span-4"
               />
               <ServiceCard
                 name="Technical Leadership and Team Mentorship"
@@ -130,7 +133,7 @@ function App() {
                 idealFor={[
                   "Development teams needing guidance on best practices and productivity.",
                 ]}
-                className="col-span-12 md:col-span-6 xl:col-span-4"
+                className="col-span-12 md:col-span-6 2xl:col-span-4"
               />
               <ServiceCard
                 name="B2B SaaS Solutions Consulting"
@@ -143,7 +146,7 @@ function App() {
                 ]}
                 tools={["ReactJS, React Native, NodeJS, Docker, AWS, GraphQL."]}
                 idealFor={["SaaS companies and B2B service providers."]}
-                className="col-span-12 md:col-span-6 xl:col-span-4"
+                className="col-span-12 md:col-span-6 2xl:col-span-4"
               />
               <ServiceCard
                 name="Startup MVP Development"
@@ -156,7 +159,7 @@ function App() {
                 ]}
                 tools={["ReactJS, React Native, NodeJS, Docker, AWS, GraphQL."]}
                 idealFor={["Entrepreneurs and early-stage startups."]}
-                className="col-span-12 md:col-span-6 xl:col-span-4"
+                className="col-span-12 md:col-span-6 2xl:col-span-4"
               />
               <ServiceCard
                 name="Project Management and Delivery"
@@ -171,7 +174,7 @@ function App() {
                 idealFor={[
                   "Businesses looking for smooth, well-managed project execution.",
                 ]}
-                className="col-span-12 md:col-span-6 xl:col-span-4"
+                className="col-span-12 md:col-span-6 2xl:col-span-4"
               />
             </div>
           </Section>
@@ -183,57 +186,85 @@ function App() {
             <p className="text-3xl font-sans font-bold">
               Experience and Skills
             </p>
-            <div className="flex flex-col lg:flex-row justify-between mt-10 gap-5">
-              <div className="ml-4">
+            <div className="flex flex-col lg:flex-row items-baseline justify-between mt-10 gap-5">
+              <div className="ml-4 flex-1">
                 <p className="text-xl font-bold mb-1 ml-7 relative before:content-['👨🏽‍💻'] before:z-10 before:absolute before:text-3xl before:h-10 before:w-10 before:bg-gray-500 before:rounded-full before:flex before:items-center before:justify-center before:-left-12 before:-top-2">
                   Professional Experience
                 </p>
                 <div className="ml-5">
                   <Experience
-                    title="Cripsr Coders Pvt. Ltd."
-                    description="Founder | Product Development Lead"
-                    className=""
-                    timeLine="Sep 2019 - Dec 2020"
+                    title="Crispr Coders Pvt. Ltd"
+                    link="https://www.crisprcoders.com/"
+                    description="Co-Founder and Product Development Lead"
+                    timeLine="Nov 2019 - Now"
                   />
                   <Experience
-                    title="Cripsr Coders Pvt. Ltd."
-                    description="Founder | Product Development Lead"
-                    className=""
-                    timeLine="Sep 2019 - Dec 2020"
+                    title="Digb"
+                    link="https://www.digb.com/"
+                    description="Lead Software Engineer"
+                    timeLine="Sep 2022 - Jun 2023"
+                  />
+                  <Experience
+                    link="https://gitstart.com/"
+                    title="Gitstart | Community (YC s19)"
+                    description="Team Lead | Software Engineer"
+                    timeLine="Nov 2018 - Oct 2022"
+                  />
+                  <Experience
+                    link="https://gitstart.com/"
+                    title="Gitstart | Community (YC s19)"
+                    description="Software Developer"
+                    timeLine="May 2018 - Nov 2018"
+                  />
+                  <Experience
+                    title="Siems Everest Pvt. Ltd"
+                    description="Full Stack Developer"
+                    timeLine="Sep 2017 - Oct 2018"
                   />
                   <Experience
                     isLast
                     link="https://aarthiknews.com/"
                     title="Arthik News "
-                    description="Founder | Product Development Lead"
-                    className=""
-                    timeLine="Sep 2019 - Dec 2020"
+                    description="Wordpress Developer"
+                    timeLine="April 2017 - Jun 2016"
                   />
                 </div>
               </div>
-              <div className="ml-4">
+              <div className="ml-4 flex-1">
                 <p className="text-xl font-bold mb-1 ml-7 relative before:content-['🎓'] before:z-10 before:absolute before:text-3xl before:h-10 before:w-10 before:bg-gray-500 before:rounded-full before:flex before:items-center before:justify-center before:-left-12 before:-top-2">
                   Formal Education
                 </p>
                 <div className="ml-5">
                   <Experience
-                    title="Cripsr Coders Pvt. Ltd."
-                    description="Founder | Product Development Lead"
-                    className=""
-                    timeLine="Sep 2019 - Dec 2020"
+                    title="Pulchowk Campus"
+                    description="Bachelor in Electrical Engineering"
+                    timeLine="2012 - 2017"
                   />
                   <Experience
-                    title="Cripsr Coders Pvt. Ltd."
-                    description="Founder | Product Development Lead"
-                    className=""
-                    timeLine="Sep 2019 - Dec 2020"
+                    title="Rehdon College"
+                    description="High School (+2 Science)"
+                    timeLine="2010 - 2012"
+                  />
+                  <Experience
+                    title="Shree Bir Bhakti Higher Secondary School"
+                    description="Secondary (8-10)"
+                    timeLine="2008 - 2010"
+                  />
+                  <Experience
+                    title="Shree Kalika Higher Secondary School"
+                    description="Secondary School (6-7)"
+                    timeLine="2006 - 2007"
+                  />
+                  <Experience
+                    title="Shree Milan Primary School"
+                    description="Primary School (2-5)"
+                    timeLine="2001 - 2005"
                   />
                   <Experience
                     isLast
-                    title="Cripsr Coders Pvt. Ltd."
-                    description="Founder | Product Development Lead"
-                    className=""
-                    timeLine="Sep 2019 - Dec 2020"
+                    title="Sishu Skikshya Sadan Bording School"
+                    description="Pre School (LKG-UKG)"
+                    timeLine="1999 - 2000"
                   />
                 </div>
               </div>
@@ -261,7 +292,7 @@ type ExperienceProps = {
   className?: string;
   timeLine?: string;
   title: string;
-  link: string;
+  link?: string;
   description: string;
   isLast?: boolean;
 };
@@ -269,22 +300,38 @@ type ExperienceProps = {
 const Experience = ({
   description,
   title,
-  link = "#",
+  link,
   timeLine,
   isLast,
 }: ExperienceProps) => {
   return (
     <div
       className={classNames(
-        "flex py-5 items-center gap-5 relative before:content-[' '] before:z-10 before:absolute before:-left-6 before:h-2.5 before:w-2.5 before:bg-gray-500 before:rounded-full after:content-[' '] after:absolute after:top-0 after:-left-5 after:w-0.5 after:bg-gray-400 ",
-        { "after:h-1/2 ": isLast, "after:h-full": !isLast }
+        "flex-1 flex py-5 items-center justify-between gap-2 relative before:content-[' '] before:z-10 before:absolute before:-left-6 before:h-2.5 before:w-2.5 before:bg-white before:border-blue-700 before:border-2 before:rounded-full after:content-[' '] after:absolute after:top-0 after:-left-5 after:w-0.5 after:bg-blue-700 after:h-full",
+        {
+          doted: isLast,
+        }
       )}
     >
-      <div className="text-gray-400 text-sm">{timeLine}</div>
-      <a href={link} target="_blank" referrerPolicy="no-referrer">
-        <p className="font-bold text-lg text-gray-700">{title}</p>
-        <p className="text-gray-500 text-sm">{description}</p>
-      </a>
+      <div className=" text-gray-400 text-xs min-w-32">{timeLine}</div>
+      {link ? (
+        <div className="flex-1 group">
+          <a
+            href={link}
+            target="_blank"
+            referrerPolicy="no-referrer"
+            className="font-bold text-lg text-gray-700 relative group-hover:text-blue-700 after:contain-[' '] after:absolute after:-bottom-1 after:left-0 after:w-0 after:transition-all after:bg-current after:h-0.5 group-hover:after:w-full"
+          >
+            {title}
+          </a>
+          <p className="text-gray-500 text-sm">{description}</p>
+        </div>
+      ) : (
+        <div className="flex-1 ">
+          <p className="font-bold text-lg text-gray-700">{title}</p>
+          <p className="text-gray-500 text-sm">{description}</p>
+        </div>
+      )}
     </div>
   );
 };
@@ -300,7 +347,7 @@ const Section = ({
     <div
       id={id}
       className={classNames(
-        "min-h-screen py-8 px-4 md:px-8 lg:px-16",
+        "min-h-screen py-16 px-4 sm:px-4 md:px-6 lg:px-10 2xl:px-16",
         className
       )}
     >
