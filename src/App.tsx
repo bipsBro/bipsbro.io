@@ -271,15 +271,26 @@ function App() {
             </div>
           </Section>
 
-          <div id="portfolio" className="flex h-screen w-full bg-orange-400">
-            portfolio
-          </div>
-          <div id="blogs" className="flex h-screen w-full bg-orange-400">
-            blogs
-          </div>
-          <div id="contact" className="flex h-screen w-full bg-orange-400">
-            contact
-          </div>
+          <Section id="portfolio" className="flex flex-col justify-center">
+            <p className="text-blue-500 uppercase">Works</p>
+            <p className="text-3xl font-sans font-bold">Creative Portfolio</p>
+            <div className="flex flex-col lg:flex-row items-baseline justify-between mt-10 gap-5"></div>
+          </Section>
+
+          <Section
+            id="blogs"
+            className="flex flex-col justify-center bg-gray-100"
+          >
+            <p className="text-blue-500 uppercase">Blogs</p>
+            <p className="text-3xl font-sans font-bold">Latest Posts</p>
+            <div className="flex flex-col lg:flex-row items-baseline justify-between mt-10 gap-5"></div>
+          </Section>
+
+          <Section id="contact" className="flex flex-col justify-center">
+            <p className="text-blue-500 uppercase">Contact</p>
+            <p className="text-3xl font-sans font-bold">Contact Get in Touch</p>
+            <div className="flex flex-col lg:flex-row items-baseline justify-between mt-10 gap-5"></div>
+          </Section>
         </ScrollSpy>
       </div>
     </div>
