@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import { useRef } from "react";
 
 type SidebarProps = {
   className?: string;
