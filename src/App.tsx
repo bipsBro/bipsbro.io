@@ -39,9 +39,9 @@ function App() {
               </button>
             </div>
           </div>
-          <Section id="about" className="flex flex-col justify-center">
-            <div className="flex gap-8">
-              <div className="flex items-center justify-end">
+          <Section id="about" className="flex flex-col justify-center !px-0">
+            <div className="md:flex gap-8 py-8 px-4 md:px-8 lg:px-16 my-10">
+              <div className="hidden md:flex items-center justify-end">
                 <div className="h-96 w-96 rounded overflow-hidden">
                   <img src="/bipin-pandey.jpg" alt="Bipin Pandey" />
                 </div>
@@ -64,30 +64,27 @@ function App() {
                 </a>
               </div>
             </div>
+            <div className="flex items-center justify-around w-full bg-blue-700 gap-6 h-56 p-8">
+              <div className="text-center space-y-4">
+                <p className="text-white text-5xl font-sans font-bold">20+</p>
+                <p className="text-gray-300 ">Project Completed</p>
+              </div>
+              <div className="text-center space-y-4">
+                <p className="text-white text-5xl font-sans font-bold">5+</p>
+                <p className="text-gray-300 ">Happy Clients</p>
+              </div>
+              <div className="text-center space-y-4">
+                <p className="text-white text-5xl font-sans font-bold">500+</p>
+                <p className="text-gray-300 ">Pull Request Merged</p>
+              </div>
+              <div className="text-center space-y-4">
+                <p className="text-white text-5xl font-sans font-bold">6+</p>
+                <p className="text-gray-300 ">Years of Experience </p>
+              </div>
+            </div>
           </Section>
-          <div
-            id="about"
-            className="flex items-center justify-around w-full bg-blue-700 gap-6 h-48 p-8 -mr-16"
-          >
-            <div className="text-center space-y-4">
-              <p className="text-white text-3xl font-sans font-bold">15</p>
-              <p className="text-gray-300 ">Project Completed</p>
-            </div>
-            <div className="text-center space-y-4">
-              <p className="text-white text-3xl font-sans font-bold">5+</p>
-              <p className="text-gray-300 ">Happy Clients</p>
-            </div>
-            <div className="text-center space-y-4">
-              <p className="text-white text-3xl font-sans font-bold">15</p>
-              <p className="text-gray-300 ">Project Completed</p>
-            </div>
-            <div className="text-center space-y-4">
-              <p className="text-white text-3xl font-sans font-bold">15</p>
-              <p className="text-gray-300 ">Project Completed</p>
-            </div>
-          </div>
 
-          <Section id="service" className="flex flex-col justify-center pt-32">
+          <Section id="services" className="flex flex-col justify-center ">
             <p className="text-blue-500 uppercase">Services</p>
             <p className="text-3xl font-sans font-bold">What I Do</p>
             <div className="grid grid-cols-12 gap-8 mt-20">
@@ -102,7 +99,7 @@ function App() {
                 ]}
                 tools={["ReactJS, React Native, NodeJS, Docker, AWS, GraphQL."]}
                 idealFor={["Startups", "tech entrepreneurs", "SaaS businesses"]}
-                className="col-span-4 "
+                className="col-span-12 md:col-span-6 xl:col-span-4"
               />
 
               <ServiceCard
@@ -118,7 +115,7 @@ function App() {
                 idealFor={[
                   "Tech teams needing robust infrastructure and streamlined deployments.",
                 ]}
-                className="col-span-4 "
+                className="col-span-12 md:col-span-6 xl:col-span-4"
               />
               <ServiceCard
                 name="Technical Leadership and Team Mentorship"
@@ -133,7 +130,7 @@ function App() {
                 idealFor={[
                   "Development teams needing guidance on best practices and productivity.",
                 ]}
-                className="col-span-4 "
+                className="col-span-12 md:col-span-6 xl:col-span-4"
               />
               <ServiceCard
                 name="B2B SaaS Solutions Consulting"
@@ -146,7 +143,7 @@ function App() {
                 ]}
                 tools={["ReactJS, React Native, NodeJS, Docker, AWS, GraphQL."]}
                 idealFor={["SaaS companies and B2B service providers."]}
-                className="col-span-4 "
+                className="col-span-12 md:col-span-6 xl:col-span-4"
               />
               <ServiceCard
                 name="Startup MVP Development"
@@ -159,7 +156,7 @@ function App() {
                 ]}
                 tools={["ReactJS, React Native, NodeJS, Docker, AWS, GraphQL."]}
                 idealFor={["Entrepreneurs and early-stage startups."]}
-                className="col-span-4 "
+                className="col-span-12 md:col-span-6 xl:col-span-4"
               />
               <ServiceCard
                 name="Project Management and Delivery"
@@ -174,8 +171,72 @@ function App() {
                 idealFor={[
                   "Businesses looking for smooth, well-managed project execution.",
                 ]}
-                className="col-span-4 "
+                className="col-span-12 md:col-span-6 xl:col-span-4"
               />
+            </div>
+          </Section>
+          <Section
+            id="services"
+            className="flex flex-col justify-center bg-gray-100"
+          >
+            <p className="text-blue-500 uppercase">Skills</p>
+            <p className="text-3xl font-sans font-bold">
+              Experience and Skills
+            </p>
+            <div className="flex flex-col lg:flex-row justify-between mt-10 gap-5">
+              <div className="ml-4">
+                <p className="text-xl font-bold mb-1 ml-7 relative before:content-['👨🏽‍💻'] before:z-10 before:absolute before:text-3xl before:h-10 before:w-10 before:bg-gray-500 before:rounded-full before:flex before:items-center before:justify-center before:-left-12 before:-top-2">
+                  Professional Experience
+                </p>
+                <div className="ml-5">
+                  <Experience
+                    title="Cripsr Coders Pvt. Ltd."
+                    description="Founder | Product Development Lead"
+                    className=""
+                    timeLine="Sep 2019 - Dec 2020"
+                  />
+                  <Experience
+                    title="Cripsr Coders Pvt. Ltd."
+                    description="Founder | Product Development Lead"
+                    className=""
+                    timeLine="Sep 2019 - Dec 2020"
+                  />
+                  <Experience
+                    isLast
+                    link="https://aarthiknews.com/"
+                    title="Arthik News "
+                    description="Founder | Product Development Lead"
+                    className=""
+                    timeLine="Sep 2019 - Dec 2020"
+                  />
+                </div>
+              </div>
+              <div className="ml-4">
+                <p className="text-xl font-bold mb-1 ml-7 relative before:content-['🎓'] before:z-10 before:absolute before:text-3xl before:h-10 before:w-10 before:bg-gray-500 before:rounded-full before:flex before:items-center before:justify-center before:-left-12 before:-top-2">
+                  Formal Education
+                </p>
+                <div className="ml-5">
+                  <Experience
+                    title="Cripsr Coders Pvt. Ltd."
+                    description="Founder | Product Development Lead"
+                    className=""
+                    timeLine="Sep 2019 - Dec 2020"
+                  />
+                  <Experience
+                    title="Cripsr Coders Pvt. Ltd."
+                    description="Founder | Product Development Lead"
+                    className=""
+                    timeLine="Sep 2019 - Dec 2020"
+                  />
+                  <Experience
+                    isLast
+                    title="Cripsr Coders Pvt. Ltd."
+                    description="Founder | Product Development Lead"
+                    className=""
+                    timeLine="Sep 2019 - Dec 2020"
+                  />
+                </div>
+              </div>
             </div>
           </Section>
 
@@ -196,6 +257,38 @@ function App() {
 
 export default App;
 
+type ExperienceProps = {
+  className?: string;
+  timeLine?: string;
+  title: string;
+  link: string;
+  description: string;
+  isLast?: boolean;
+};
+
+const Experience = ({
+  description,
+  title,
+  link = "#",
+  timeLine,
+  isLast,
+}: ExperienceProps) => {
+  return (
+    <div
+      className={classNames(
+        "flex py-5 items-center gap-5 relative before:content-[' '] before:z-10 before:absolute before:-left-6 before:h-2.5 before:w-2.5 before:bg-gray-500 before:rounded-full after:content-[' '] after:absolute after:top-0 after:-left-5 after:w-0.5 after:bg-gray-400 ",
+        { "after:h-1/2 ": isLast, "after:h-full": !isLast }
+      )}
+    >
+      <div className="text-gray-400 text-sm">{timeLine}</div>
+      <a href={link} target="_blank" referrerPolicy="no-referrer">
+        <p className="font-bold text-lg text-gray-700">{title}</p>
+        <p className="text-gray-500 text-sm">{description}</p>
+      </a>
+    </div>
+  );
+};
+
 type SectionProps = { id: string; className?: string };
 
 const Section = ({
@@ -204,7 +297,13 @@ const Section = ({
   children,
 }: PropsWithChildren<SectionProps>) => {
   return (
-    <div id={id} className={classNames("min-h-screen py-8 px-16", className)}>
+    <div
+      id={id}
+      className={classNames(
+        "min-h-screen py-8 px-4 md:px-8 lg:px-16",
+        className
+      )}
+    >
       {children}
     </div>
   );
