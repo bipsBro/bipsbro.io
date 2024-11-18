@@ -38,12 +38,12 @@ export default function Sidebar({ className }: SidebarProps) {
   return (
     <>
       <div className="lg:hidden fixed top-0 left-0 right-0 z-40 shadow">
-        <Disclosure as="nav" className="bg-gray-200">
+        <Disclosure as="nav" className="bg-blue-700">
           <div className=" mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center">
                 <div className="shrink-0">
-                  <div className="rounded-full overflow-hidden h-12 w-12 border-white/20 border-2">
+                  <div className="rounded-lg overflow-hidden h-12 w-12 border-white/20 border-2">
                     <img src="bipin-pandey.jpg" />
                   </div>
                 </div>
@@ -51,14 +51,14 @@ export default function Sidebar({ className }: SidebarProps) {
 
               <div className="-mr-2 flex">
                 {/* Mobile menu button */}
-                <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md bg-gray-300 p-2 text-gray-400 hover:bg-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-200">
+                <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md transition-all ease-in-out bg-gray-300 p-2 text-blue-700 hover:bg-gray-200">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    stroke-width="2"
                     stroke="currentColor"
                     className="block size-6 group-data-[open]:hidden"
                   >
@@ -72,7 +72,7 @@ export default function Sidebar({ className }: SidebarProps) {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    stroke-width="2"
                     stroke="currentColor"
                     className="hidden size-6 group-data-[open]:block"
                   >
@@ -94,9 +94,12 @@ export default function Sidebar({ className }: SidebarProps) {
                   key={i}
                   onClick={onPress}
                   href={`#${item.href}`}
-                  className="hover:bg-yellow-400"
+                  className=""
                 >
-                  <div className="p-2" data-to-scrollspy-id={item.href}>
+                  <div
+                    className="px-2 py-1 transition-all text-white hover:font-bold hover:bg-gray-300 hover:text-blue-700 rounded"
+                    data-to-scrollspy-id={item.href}
+                  >
                     {item.name}
                   </div>
                 </a>

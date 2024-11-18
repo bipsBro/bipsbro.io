@@ -3,6 +3,7 @@ import ScrollSpy from "react-ui-scrollspy";
 import { Typewriter } from "react-simple-typewriter";
 import { PropsWithChildren } from "react";
 import classNames from "classnames";
+import ContactMe from "./components/ContactMe";
 
 function App() {
   return (
@@ -246,11 +247,12 @@ function App() {
                     timeLine="2010 - 2012"
                   />
                   <Experience
+                    isLast
                     title="Shree Bir Bhakti Higher Secondary School"
-                    description="Secondary (8-10)"
+                    description="Secondary School (8-10)"
                     timeLine="2008 - 2010"
                   />
-                  <Experience
+                  {/* <Experience
                     title="Shree Kalika Higher Secondary School"
                     description="Secondary School (6-7)"
                     timeLine="2006 - 2007"
@@ -265,7 +267,7 @@ function App() {
                     title="Sishu Skikshya Sadan Bording School"
                     description="Pre School (LKG-UKG)"
                     timeLine="1999 - 2000"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
@@ -288,8 +290,10 @@ function App() {
 
           <Section id="contact" className="flex flex-col justify-center">
             <p className="text-blue-500 uppercase">Contact</p>
-            <p className="text-3xl font-sans font-bold">Contact Get in Touch</p>
-            <div className="flex flex-col lg:flex-row items-baseline justify-between mt-10 gap-5"></div>
+            <p className="text-3xl font-sans font-bold">Get in Touch</p>
+            <div className="flex flex-col lg:flex-row items-baseline justify-between mt-10 gap-5">
+              <ContactMe />
+            </div>
           </Section>
         </ScrollSpy>
       </div>
