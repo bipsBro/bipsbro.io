@@ -1,9 +1,11 @@
-import Sidebar from "./components/Sidebar";
+"use client";
 import ScrollSpy from "react-ui-scrollspy";
 import { Typewriter } from "react-simple-typewriter";
 import { PropsWithChildren } from "react";
 import classNames from "classnames";
-import ContactMe from "./components/ContactMe";
+import Sidebar from "@/components/Sidebar";
+import ContactMe from "@/components/ContactMe";
+import Image from "next/image";
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
         >
           <div
             id="home"
-            className="relative flex flex-col h-screen w-full items-center justify-center bg-fixed bg-hero-three bg-cover bg-no-repeat bg-center"
+            className="relative flex flex-col h-screen w-full items-center justify-center bg-fixed bg-[url(/bg-three.jpg)] bg-cover bg-no-repeat bg-center"
           >
             <div className="absolute h-screen w-full top-0 bottom-0 left-0 right-0 z-10"></div>
             <div className="relative z-20 flex flex-col gap-4 items-center justify-between bg-black/40 rounded px-6 py-8 min-w-[500px]">
@@ -47,7 +49,12 @@ function App() {
             <div className="md:flex gap-8 py-8 px-4 md:px-8 lg:px-16 my-10">
               <div className="hidden md:flex items-center justify-end">
                 <div className="h-96 w-96 rounded overflow-hidden">
-                  <img src="/bipin-pandey.jpg" alt="Bipin Pandey" />
+                  <Image
+                    height={500}
+                    width={900}
+                    src="/bipin-pandey.jpg"
+                    alt="Bipin Pandey"
+                  />
                 </div>
               </div>
               <div className="gap-3 flex flex-col justify-center">
