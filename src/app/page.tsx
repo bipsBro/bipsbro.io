@@ -23,15 +23,15 @@ function App() {
             className="relative flex flex-col h-screen w-full items-center justify-center bg-fixed bg-[url(/bg-three.jpg)] bg-cover bg-no-repeat bg-center"
           >
             <div className="absolute h-screen w-full top-0 bottom-0 left-0 right-0 z-10"></div>
-            <div className="relative z-20 flex flex-col gap-4 items-center justify-between bg-black/40 rounded px-6 py-8 min-w-[500px]">
+            <div className="relative z-20 flex flex-col gap-4 items-center justify-between bg-black/70 rounded px-6 py-8 min-w-[500px]">
               <h1 className="text-5xl uppercase font-bold text-white">
                 <span className="capitalize">Er.</span> Bipin Pandey
               </h1>
-              <p className="text-lg text-gray-200 break-words">
+              <p className="text-lg text-gray-400 break-words font-bold">
                 Software Engineer
                 <span className="">
                   <Typewriter
-                    words={[", Founder, Mentor"]}
+                    words={[", Co-Founder, Mentor"]}
                     loop
                     deleteSpeed={100}
                   />
@@ -63,12 +63,14 @@ function App() {
                   Er. Bipin Pandey is software engineer based on Nepal
                 </p>
                 <p className="mb-8">
-                  I am a Software Engineer, and I'm very passionate and
-                  dedicated to my work. With 6+ years experience as a
-                  professional Web developer, I have acquired the skills and
-                  knowledge necessary to make your project a success.
+                  Highly skilled and adaptable software engineer with extensive
+                  experience in software development, robotics, and automation.
+                  Adept at designing innovative solutions, developing working
+                  prototypes, and optimizing code for efficiency and
+                  maintainability. Passionate about leveraging technology to
+                  solve complex problems and enhance user experiences.
                 </p>
-                <a href="" download>
+                <a href="/CV_Er._Bipin_Pandey.pdf" download>
                   <button className="bg-blue-700 rounded-sm text-white px-5 py-3 text-base">
                     Download CV
                   </button>
@@ -335,14 +337,14 @@ const Experience = ({
         }
       )}
     >
-      <div className=" text-gray-400 text-xs min-w-32">{timeLine}</div>
+      <div className=" text-gray-800 text-xs min-w-32">{timeLine}</div>
       {link ? (
         <div className="flex-1 group">
           <a
             href={link}
             target="_blank"
             referrerPolicy="no-referrer"
-            className="font-bold text-lg text-gray-700 relative group-hover:text-blue-700 after:contain-[' '] after:absolute after:-bottom-1 after:left-0 after:w-0 after:transition-all after:bg-current after:h-0.5 group-hover:after:w-full"
+            className="font-bold text-lg text-slate-900 relative group-hover:text-blue-700 after:contain-[' '] after:absolute after:-bottom-1 after:left-0 after:w-0 after:transition-all after:bg-current after:h-0.5 group-hover:after:w-full"
           >
             {title}
           </a>
@@ -406,7 +408,13 @@ const ServiceCard = ({
     >
       <div className="relative z-10  group-hover:text-white">
         <div className="h-20 w-20 mb-5 rounded-full bg-blue-700 border-4 border-gray-300 p-4">
-          <img className="h-full w-full filter" src={icon} />
+          <Image
+            width={50}
+            height={50}
+            alt="Icon"
+            className="h-full w-full filter"
+            src={icon}
+          />
         </div>
         <p className="text-xl font-sans font-bold mb-1">{name}</p>
         <p className="mb-1 text-gray-700 group-hover:text-gray-300">
