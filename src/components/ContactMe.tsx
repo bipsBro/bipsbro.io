@@ -157,7 +157,7 @@ export default function ContactMe() {
             />
           </div>
           <div className="relative">
-            <label htmlFor="work">
+            <label htmlFor="subject">
               <span className="absolute right-3 top-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -169,6 +169,7 @@ export default function ContactMe() {
               </span>
             </label>
             <select
+              id="subject"
               name="subject"
               value={subject}
               onChange={({ target: { value } }) => {
