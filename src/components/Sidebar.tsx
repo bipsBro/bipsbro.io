@@ -6,6 +6,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
+import Image from "next/image";
 type SidebarProps = {
   className?: string;
 };
@@ -26,9 +27,9 @@ export default function Sidebar({ className }: SidebarProps) {
       e.currentTarget.href.split("#")[1]
     );
     if (target) {
-      let headerOffset = 20;
-      let elementPosition = target.getBoundingClientRect().top;
-      let offsetPosition = elementPosition - headerOffset;
+      const headerOffset = 20;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - headerOffset;
       window.scrollBy({
         top: offsetPosition,
         behavior: "smooth",
@@ -45,7 +46,7 @@ export default function Sidebar({ className }: SidebarProps) {
               <div className="flex items-center">
                 <div className="shrink-0">
                   <div className="rounded-lg overflow-hidden h-12 w-12 border-white/20 border-2">
-                    <img src="bipin-pandey.jpg" />
+                    <Image alt="Bipin Pandey" src="bipin-pandey.jpg" />
                   </div>
                 </div>
               </div>
@@ -117,7 +118,12 @@ export default function Sidebar({ className }: SidebarProps) {
       >
         <div className="h-32 bg-yellow-400 flex items-center justify-center">
           <div className="rounded-full overflow-hidden h-44 w-44 mt-28 border-white/20 border-8">
-            <img src="bipin-pandey.jpg" />
+            <Image
+              alt="Bipin Pandey"
+              width={200}
+              height={200}
+              src="bipin-pandey.jpg"
+            />
           </div>
         </div>
         <div className="pt-32 space-y-3 flex flex-col px-2">
